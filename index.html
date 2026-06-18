@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Vaishnavi Shetty | Portfolio - Full Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Professional Portfolio of Vaishnavi Shetty, an Information Science Engineering Graduate, Software Developer, and Full Stack Developer. Discover projects, technical skills, and experience.">
+  <meta name="keywords" content="Vaishnavi Shetty, Full Stack Developer, Software Developer, Java, Spring Boot, React, Python, Django, Machine Learning, Information Science Engineering, VTU">
+  <meta name="author" content="Vaishnavi Shetty">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vaishnavi Shetty | Portfolio - Full Stack Developer">
+  <meta property="og:description" content="Professional Portfolio of Vaishnavi Shetty, specializing in Java, Spring Boot, React, and Python Full Stack Development.">
+  <meta property="og:image" content="assets/project-patient-monitoring.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Vaishnavi Shetty | Portfolio">
+  <meta property="twitter:description" content="Professional Portfolio of Vaishnavi Shetty, specializing in Java, Spring Boot, React, and Python Full Stack Development.">
+  <meta property="twitter:image" content="assets/project-patient-monitoring.png">
+
+  <!-- Favicon / Emoji Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <canvas id="blueprint-canvas"></canvas>
+<div class="blueprint-grid"></div>
+<div class="hero-spotlight"></div>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        Vaishnavi Shetty<span class="logo-dot"></span>
+      </a>
+      
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="nav-menu">
+        <div class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </div>
+        <div class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </div>
+        <div class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </div>
+        <div class="nav-item">
+          <a href="#education" class="nav-link">Education</a>
+        </div>
+        <div class="nav-item">
+          <a href="#certifications" class="nav-link">Certifications</a>
+        </div>
+        <div class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="home" class="hero-wrapper">
+      
+      <!-- Floating background tech gadgets (TWOMUCH.STUDIO style, behind content) -->
+      <div class="studio-bg-objects">
+        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=400&auto=format&fit=crop&q=80" alt="MacBook" class="bg-gadget gadget-macbook">
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&auto=format&fit=crop&q=80" alt="iPhone" class="bg-gadget gadget-iphone">
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&auto=format&fit=crop&q=80" alt="VR Headset" class="bg-gadget gadget-vr">
+        <img src="https://images.unsplash.com/photo-1618384887929-16ec33faf9c1?w=400&auto=format&fit=crop&q=80" alt="Keyboard" class="bg-gadget gadget-keyboard">
+      </div>
+
+      <!-- Left side: Profile image container -->
+      <div class="hero-left reveal-item">
+        <div class="profile-frame-container">
+          <div class="profile-glow-ring"></div>
+          <div class="profile-frame">
+            <img src="assets/profile.jpg" alt="Vaishnavi Shetty" class="profile-avatar-img" id="profile-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Modern code editor terminal component -->
+      <div class="hero-right reveal-item reveal-delay-1">
+        <div class="code-editor">
+          <div class="editor-header">
+            <div class="editor-dots">
+              <div class="editor-dot dot-red"></div>
+              <div class="editor-dot dot-yellow"></div>
+              <div class="editor-dot dot-green"></div>
+            </div>
+            <div class="editor-title">vaishnavi-profile.js</div>
+            <div class="editor-lang">JavaScript</div>
+          </div>
+          <div class="editor-body" id="editor-body">
+            <!-- The typing animation script will write lines inside here dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROFESSIONAL EXPERIENCE SECTION
+         ========================================== -->
+    <section id="experience">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Career Path</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Job 1 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-date">Feb 2026 – Present</div>
+            <h3 class="timeline-role">Java Full Stack Developer Intern</h3>
+            <h4 class="timeline-company">TAP Academy</h4>
+            <div class="timeline-tech-stack">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Hibernate</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-date">Feb 2026 – May 2026</div>
+            <h3 class="timeline-role">Advanced Web Systems Engineering Intern</h3>
+            <h4 class="timeline-company">Swizosoft (OPC) Private Limited</h4>
+            <div class="timeline-tech-stack">
+              <span class="tech-tag">Patient Dashboard</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">WebSocket</span>
+              <span class="tech-tag">AI Alerts</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-date">Jun 2024 – Jul 2024</div>
+            <h3 class="timeline-role">Python Full Stack Development Intern</h3>
+            <h4 class="timeline-company">Microdegree</h4>
+            <div class="timeline-tech-stack">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section id="projects">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Portfolio Showcases</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card project-card-1 glass-panel reveal-item">
+          <div class="project-img-wrapper">
+            <img src="assets/project-patient-monitoring.png" alt="Real-Time Patient Monitoring" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Real-Time Patient Monitoring and Alert Dashboard</h3>
+            <p class="project-desc">Developed a real-time healthcare monitoring dashboard for live patient vitals tracking, instant alerts, JWT authentication, AI-assisted anomaly detection, and Docker deployment.</p>
+            <div class="project-stack">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">WebSocket</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card project-card-2 glass-panel reveal-item reveal-delay-1">
+          <div class="project-img-wrapper">
+            <img src="assets/project-steganography.png" alt="Deep Learning Steganography" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Deep Learning Based Multi-Modal Steganography</h3>
+            <p class="project-desc">Developed a deep learning system capable of hiding secret information inside images, videos, audio, and text while maintaining strong security and resistance against steganalysis attacks.</p>
+            <div class="project-stack">
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">RNN</span>
+              <span class="tech-tag">LSTM</span>
+              <span class="tech-tag">ResNet</span>
+              <span class="tech-tag">AES</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">PyTorch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card project-card-3 glass-panel reveal-item reveal-delay-2">
+          <div class="project-img-wrapper">
+            <img src="assets/project-banking.png" alt="Banking Web Application" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Comprehensive Banking Web Application</h3>
+            <p class="project-desc">Built a banking system that supports account management, transactions, fund transfers, bill payments, and secure payment gateway integration.</p>
+            <div class="project-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION
+         ========================================== -->
+    <section id="skills">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Technical Arsenal</span>
+        <h2 class="section-title">Skills & Toolkit</h2>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Category 1: Frontend -->
+        <div class="skills-category-card glass-panel reveal-item">
+          <h3 class="category-title"><i class="fa-solid fa-code"></i> Frontend</h3>
+          <div class="skills-list">
+            <!-- HTML -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2L2,22L12,17L22,22L12,2M12,5.8L18.8,19.1L12,15.7L5.2,19.1L12,5.8Z"/></svg>
+              <span>HTML</span>
+            </div>
+            <!-- CSS -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2L2,22L12,17L22,22L12,2M12,5.8L18.8,19.1L12,15.7L5.2,19.1L12,5.8Z"/></svg>
+              <span>CSS</span>
+            </div>
+            <!-- JS -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M3,3V21H21V3H3M7.73,18.04C7.04,18.04 6.47,17.81 6,17.36C5.55,16.9 5.33,16.27 5.33,15.46H7.07C7.07,15.86 7.17,16.17 7.37,16.37C7.57,16.57 7.85,16.67 8.22,16.67C8.59,16.67 8.87,16.55 9.06,16.31C9.25,16.07 9.35,15.78 9.35,15.42V10.13H11.12V15.43C11.12,16.27 10.89,16.92 10.43,17.37C9.97,17.82 9.07,18.04 7.73,18.04M13.73,18.04C13.06,18.04 12.48,17.84 12,17.43C11.53,17.03 11.3,16.39 11.3,15.53H13.03C13.03,16.14 13.37,16.45 14.04,16.45C14.36,16.45 14.61,16.37 14.78,16.22C14.95,16.07 15.04,15.86 15.04,15.59C15.04,15.36 14.96,15.18 14.8,15.04C14.63,14.9 14.28,14.76 13.74,14.63C12.83,14.4 12.16,14.11 11.72,13.75C11.29,13.39 11.07,12.83 11.07,12.06C11.07,11.23 11.33,10.61 11.85,10.2C12.38,9.79 13.08,9.58 13.97,9.58C14.71,9.58 15.32,9.78 15.8,10.17C16.28,10.56 16.5,11.24 16.5,12.18H14.78C14.78,11.63 14.5,11.36 13.95,11.36C13.67,11.36 13.44,11.43 13.28,11.57C13.11,11.71 13.03,11.89 13.03,12.1C13.03,12.32 13.11,12.49 13.28,12.62C13.44,12.75 13.87,12.9 14.57,13.07C15.48,13.29 16.14,13.59 16.56,13.97C16.98,14.35 17.19,14.93 17.19,15.71C17.19,16.53 16.92,17.14 16.37,17.55C15.82,17.96 14.94,18.04 13.73,18.04Z"/></svg>
+              <span>JavaScript</span>
+            </div>
+            <!-- React -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13C10.88,4.38 12.63,6.88 12,8.13C11.38,9.38 9,8.75 8.13,9.38C7.5,9.88 7.5,10.88 8.13,11.38C9.38,12.38 12.5,12 12,13C11.5,14 7,16 6,17C5,18 5.5,19 7,19C8.5,19 13.5,15.5 14.5,15.5C15.5,15.5 17,17.5 18,17.5C19,17.5 19,16.5 18,15.5C17,14.5 15,12.5 15,11.5C15,10.5 17.5,10.5 18.5,9.5C19.5,8.5 18.5,7.5 17,7.5C15.5,7.5 13.5,9.5 12.5,9.5C11.5,9.5 11.5,8 12.5,7C13.5,6 15,4.5 15,3.5C15,2.5 14,2 12,2Z" fill-rule="evenodd"/></svg>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Backend -->
+        <div class="skills-category-card glass-panel reveal-item reveal-delay-1">
+          <h3 class="category-title"><i class="fa-solid fa-server"></i> Backend</h3>
+          <div class="skills-list">
+            <!-- Java -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M2,3.5C2,2.7 2.7,2 3.5,2H20.5C21.3,2 22,2.7 22,3.5V20.5C22,21.3 21.3,22 20.5,22H3.5C2.7,22 2,21.3 2,20.5V3.5M16.5,11.5C16.5,8 14.5,7.5 14.5,7.5C14.5,7.5 14.2,6.5 13,6C11,5.2 8.5,6.5 8.5,8C8.5,9 9,10 10.5,10.5C11.5,11 11.5,11.5 10.5,12C9,12.5 8,14 8.5,15.5C9,17 11.5,18 13.5,17.5C15.5,17 16.5,15 16.5,11.5Z"/></svg>
+              <span>Java</span>
+            </div>
+            <!-- Python -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18A2,2 0 0,1 10,16A2,2 0 0,1 12,14A2,2 0 0,1 14,16A2,2 0 0,1 12,18Z"/></svg>
+              <span>Python</span>
+            </div>
+            <!-- Spring Boot -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2A10,10 0 0,0 2,12M15.6,8.4C16.8,9.6 17,11.5 16.2,12.8C15.4,14.1 13.7,14.7 12.3,14.1C10.9,13.5 10.2,11.9 10.6,10.4C11,8.9 12.5,7.9 14,8.1C14.6,8.2 15.2,8 15.6,8.4Z"/></svg>
+              <span>Spring Boot</span>
+            </div>
+            <!-- Django -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5V7.5H13V16.5H11Z"/></svg>
+              <span>Django</span>
+            </div>
+            <!-- REST APIs -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M12,18C8.69,18 6,15.31 6,12C6,8.69 8.69,6 12,6C15.31,6 18,8.69 18,12C18,15.31 15.31,18 12,18Z"/></svg>
+              <span>REST APIs</span>
+            </div>
+            <!-- WebSocket -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,6H13V14H11V6M11,16H13V18H11V16Z"/></svg>
+              <span>WebSocket</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Database -->
+        <div class="skills-category-card glass-panel reveal-item reveal-delay-2">
+          <h3 class="category-title"><i class="fa-solid fa-database"></i> Database</h3>
+          <div class="skills-list">
+            <!-- MySQL -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C15.87,4 19,6.24 19,9C19,11.76 15.87,14 12,14C8.13,14 5,11.76 5,9C5,6.24 8.13,4 12,4M12,16C15.87,16 19,17.34 19,19C19,19.33 18.5,19.78 17.5,20C16.24,20.28 14.22,20.5 12,20.5C9.78,20.5 7.76,20.28 6.5,20C5.5,19.78 5,19.33 5,19C5,17.34 8.13,16 12,16Z"/></svg>
+              <span>MySQL</span>
+            </div>
+            <!-- MongoDB -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C14.5,4 16,6.5 16,9.5C16,13.5 12,18.5 12,18.5C12,18.5 8,13.5 8,9.5C8,6.5 9.5,4 12,4Z"/></svg>
+              <span>MongoDB</span>
+            </div>
+            <!-- SQL -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,4C16.42,4 20,6.24 20,9C20,11.76 16.42,14 12,14C7.58,14 4,11.76 4,9C4,6.24 7.58,4 12,4M12,16C16.42,16 20,17.79 20,20C20,20.21 19.5,20.5 18,20.72C16.5,20.9 14.5,21 12,21C9.5,21 7.5,20.9 6,20.72C4.5,20.5 4,20.21 4,20C4,17.79 7.58,16 12,16Z"/></svg>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Core Concepts -->
+        <div class="skills-category-card glass-panel reveal-item">
+          <h3 class="category-title"><i class="fa-solid fa-brain"></i> Core Concepts</h3>
+          <div class="skills-list">
+            <!-- OOP -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M8,10H16V12H8V10M8,14H16V16H8V14Z"/></svg>
+              <span>OOP</span>
+            </div>
+            <!-- DSA -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,5A1.5,1.5 0 0,1 13.5,6.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 10.5,6.5A1.5,1.5 0 0,1 12,5M7.5,10.5A1.5,1.5 0 0,1 9,12A1.5,1.5 0 0,1 7.5,13.5A1.5,1.5 0 0,1 6,12A1.5,1.5 0 0,1 7.5,10.5M16.5,10.5A1.5,1.5 0 0,1 18,12A1.5,1.5 0 0,1 16.5,13.5A1.5,1.5 0 0,1 15,12A1.5,1.5 0 0,1 16.5,10.5Z"/></svg>
+              <span>DSA</span>
+            </div>
+            <!-- Machine Learning -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18A2,2 0 0,1 10,16A2,2 0 0,1 12,14A2,2 0 0,1 14,16A2,2 0 0,1 12,18Z"/></svg>
+              <span>Machine Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Tools & Technologies -->
+        <div class="skills-category-card glass-panel reveal-item reveal-delay-1">
+          <h3 class="category-title"><i class="fa-solid fa-wrench"></i> Tools</h3>
+          <div class="skills-list">
+            <!-- Docker -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2A10,10 0 0,0 2,12M7.5,10H9.5V12H7.5V10M10.5,10H12.5V12H10.5V10M13.5,10H15.5V12H13.5V10M10.5,7H12.5V9H10.5V7Z"/></svg>
+              <span>Docker</span>
+            </div>
+            <!-- Git -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.41 6,9.5 6.65,8.8C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.3,6.95 11.15,6.84 12,6.84C12.85,6.84 13.7,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.8C18,9.5 18.38,10.41 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+              <span>Git</span>
+            </div>
+            <!-- GitHub -->
+            <div class="skill-item">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.41 6,9.5 6.65,8.8C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.3,6.95 11.15,6.84 12,6.84C12.85,6.84 13.7,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.8C18,9.5 18.38,10.41 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section id="education">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Academic Credentials</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-container reveal-item">
+        <div class="education-card glass-panel">
+          <div class="edu-header">
+            <div class="edu-title-group">
+              <h3 class="edu-degree">B.E. in Information Science and Engineering</h3>
+              <h4 class="edu-university">Visvesvaraya Technological University</h4>
+            </div>
+            <div class="edu-year">2022 – 2026</div>
+          </div>
+          
+          <div class="edu-details">
+            <div class="edu-stat">
+              <span class="edu-stat-value">9.04</span>
+              <span class="edu-stat-label">CGPA Achievement</span>
+            </div>
+            <div class="edu-stat">
+              <span class="edu-stat-value">Active</span>
+              <span class="edu-stat-label">Academic Status</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS SECTION
+         ========================================== -->
+    <section id="certifications">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Verified Accomplishments</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card cert-card-1 glass-panel reveal-item">
+          <div class="cert-icon-box">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Java Programming</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card cert-card-2 glass-panel reveal-item reveal-delay-1">
+          <div class="cert-icon-box">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Python Programming</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card cert-card-3 glass-panel reveal-item reveal-delay-2">
+          <div class="cert-icon-box">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Artificial Intelligence</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card cert-card-4 glass-panel reveal-item">
+          <div class="cert-icon-box">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Power BI</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-card cert-card-5 glass-panel reveal-item reveal-delay-1">
+          <div class="cert-icon-box">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Cybersecurity</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-card cert-card-6 glass-panel reveal-item reveal-delay-2">
+          <div class="cert-icon-box">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">IoT</h3>
+            <span class="cert-org">Professional Certification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact">
+      <div class="section-title-wrapper reveal-item">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Form Container -->
+        <div class="contact-card glass-panel reveal-item">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder=" " required autocomplete="name">
+                <label for="name">Name</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="mobile" class="form-control" placeholder=" " autocomplete="tel">
+                <label for="mobile">Mobile Number</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder=" " required autocomplete="email">
+              <label for="email">Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="subject" class="form-control" placeholder=" " required>
+              <label for="subject">Subject</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" class="form-control" placeholder=" " required></textarea>
+              <label for="message">Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Developer-themed Illustration -->
+        <div class="contact-illustration reveal-item reveal-delay-1">
+          <div class="laptop-scene">
+            <!-- Floating icons -->
+            <div class="floating-element float-java"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="floating-element float-react"><i class="fa-brands fa-react"></i> React</div>
+            <div class="floating-element float-code"><i class="fa-solid fa-code"></i> Code</div>
+
+            <div class="laptop-screen">
+              <div class="screen-code">
+&gt; Initializing Contact Request...<br>
+&gt; Sending payload to Vaishnavi...<br>
+&gt; Success: Message Sent!<br>
+&gt; await contact.response();<br>
+&gt; Processing...<br>
+&gt; Status: Online<br>
+&gt; System: Ready to Collaborate<br>
+&gt; console.log("Hello, World!");
+              </div>
+            </div>
+            <div class="laptop-keyboard">
+              <div class="keyboard-trackpad"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Vaishnavi Shetty</div>
+      
+      <div class="footer-nav">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#education" class="footer-link">Education</a>
+        <a href="#certifications" class="footer-link">Certifications</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:vaishnavishetty@email.com" class="social-circle" aria-label="Email Me">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        &copy; 2026 Vaishnavi Shetty. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       EMBEDDED CLIENT SIDE LOGIC (JAVASCRIPT)
+       ========================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      /* ==========================================
+         STICKY HEADER & NAV SCROLL
+         ========================================== */
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      /* ==========================================
+         MOBILE MENU TOGGLE
+         ========================================== */
+      const hamburger = document.getElementById('hamburger-menu');
+      const navMenu = document.getElementById('nav-menu');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+
+      /* ==========================================
+         TERMINAL CODE EDITOR TYPING ANIMATION
+         ========================================== */
+      const terminalLines = [
+        { text: 'const developer = {', delay: 200 },
+        { text: '  name: "Vaishnavi Shetty",', delay: 400 },
+        { text: '  education: "Information Science Engineering Graduate",', delay: 400 },
+        { text: '  roles: [', delay: 200 },
+        { text: '    "Software Developer",', delay: 300 },
+        { text: '    "Full Stack Developer",', delay: 300 },
+        { text: '    "AI & Machine Learning Enthusiast",', delay: 300 },
+        { text: '    "Data Science Intern"', delay: 300 },
+        { text: '  ],', delay: 200 },
+        { text: '  passion: "Building scalable applications & solving real-world problems",', delay: 500 },
+        { text: '  skills: [', delay: 200 },
+        { text: '    "Java", "Python", "Spring Boot", "Django", "REST APIs",', delay: 400 },
+        { text: '    "WebSocket", "MySQL", "MongoDB", "Machine Learning",', delay: 400 },
+        { text: '    "HTML", "CSS", "JavaScript", "React", "Docker", "DSA"', delay: 400 },
+        { text: '  ]', delay: 200 },
+        { text: '};', delay: 200 }
+      ];
+
+      const editorBody = document.getElementById('editor-body');
+      let currentLineIndex = 0;
+
+      function highlightSyntax(text) {
+        return text
+          .replace(/\b(const|let|var)\b/g, '<span class="code-keyword">$1</span>')
+          .replace(/(["'])(.*?)\1/g, '<span class="code-string">"$2"</span>')
+          .replace(/\b(developer|name|education|roles|passion|skills)\b/g, '<span class="code-variable">$1</span>')
+          .replace(/([{}[\]])/g, '<span class="code-bracket">$1</span>');
+      }
+
+      function typeLine() {
+        if (!editorBody) return;
+        if (currentLineIndex >= terminalLines.length) {
+          const endingLine = document.createElement('div');
+          endingLine.className = 'code-line';
+          endingLine.innerHTML = `<span class="line-num">${currentLineIndex + 1}</span><span class="line-content"><span class="code-comment">// Ready to collaborate!</span><span class="typing-cursor"></span></span>`;
+          editorBody.appendChild(endingLine);
+          return;
+        }
+
+        const lineData = terminalLines[currentLineIndex];
+        const lineElement = document.createElement('div');
+        lineElement.className = 'code-line';
+        
+        const lineNum = document.createElement('span');
+        lineNum.className = 'line-num';
+        lineNum.textContent = currentLineIndex + 1;
+        lineElement.appendChild(lineNum);
+
+        const lineContent = document.createElement('span');
+        lineContent.className = 'line-content';
+        lineElement.appendChild(lineContent);
+        editorBody.appendChild(lineElement);
+
+        let charIndex = 0;
+        const rawText = lineData.text;
+
+        function typeChar() {
+          if (charIndex <= rawText.length) {
+            const slicedText = rawText.slice(0, charIndex);
+            lineContent.innerHTML = highlightSyntax(slicedText) + '<span class="typing-cursor"></span>';
+            charIndex++;
+            setTimeout(typeChar, 18);
+          } else {
+            lineContent.innerHTML = highlightSyntax(rawText);
+            currentLineIndex++;
+            setTimeout(typeLine, lineData.delay);
+          }
+        }
+
+        typeChar();
+      }
+
+      // Start Typing Simulation
+      setTimeout(typeLine, 800);
+
+      /* ==========================================
+         SCROLL REVEAL (INTERSECTION OBSERVER)
+         ========================================== */
+      const revealItems = document.querySelectorAll('.reveal-item');
+      
+      const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target); // Reveal once
+          }
+        });
+      };
+
+      const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null,
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      revealItems.forEach(item => {
+        revealObserver.observe(item);
+      });
+
+      /* ==========================================
+         CONTACT FORM VALIDATION & HANDLING
+         ========================================== */
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          const nameVal = document.getElementById('name').value.trim();
+          const emailVal = document.getElementById('email').value.trim();
+          const subjectVal = document.getElementById('subject').value.trim();
+          const messageVal = document.getElementById('message').value.trim();
+
+          if (!nameVal || !emailVal || !subjectVal || !messageVal) {
+            alert('Please fill out all required fields.');
+            return;
+          }
+
+          // Visual feedback on success
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const originalHTML = submitBtn.innerHTML;
+          
+          submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-circle-notch fa-spin"></i>';
+          submitBtn.style.pointerEvents = 'none';
+
+          setTimeout(() => {
+            submitBtn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+            submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+            submitBtn.style.boxShadow = '0 4px 20px rgba(16, 185, 129, 0.4)';
+            
+            contactForm.reset();
+            
+            // Revert back button after 3 seconds
+            setTimeout(() => {
+              submitBtn.innerHTML = originalHTML;
+              submitBtn.style.pointerEvents = 'auto';
+              submitBtn.style.background = '';
+              submitBtn.style.boxShadow = '';
+            }, 4000);
+          }, 1500);
+        });
+      }
+    });
+  </script>
+  <script>
+const canvas = document.getElementById("blueprint-canvas");
+const ctx = canvas.getContext("2d");
+
+let nodes=[];
+
+function resize(){
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+}
+
+resize();
+window.addEventListener("resize",resize);
+
+for(let i=0;i<35;i++){
+    nodes.push({
+        x:Math.random()*canvas.width,
+        y:Math.random()*canvas.height,
+        dx:(Math.random()-0.5)*0.3,
+        dy:(Math.random()-0.5)*0.3
+    });
+}
+
+function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    nodes.forEach(n=>{
+        n.x+=n.dx;
+        n.y+=n.dy;
+
+        if(n.x<0||n.x>canvas.width) n.dx*=-1;
+        if(n.y<0||n.y>canvas.height) n.dy*=-1;
+
+        ctx.beginPath();
+        ctx.arc(n.x,n.y,2,0,Math.PI*2);
+        ctx.fillStyle="rgba(112,137,186,0.6)";
+        ctx.fill();
+    });
+
+    for(let i=0;i<nodes.length;i++){
+        for(let j=i+1;j<nodes.length;j++){
+            let dx=nodes[i].x-nodes[j].x;
+            let dy=nodes[i].y-nodes[j].y;
+            let dist=Math.sqrt(dx*dx+dy*dy);
+
+            if(dist<150){
+                ctx.beginPath();
+                ctx.moveTo(nodes[i].x,nodes[i].y);
+                ctx.lineTo(nodes[j].x,nodes[j].y);
+                ctx.strokeStyle=`rgba(112,137,186,${1-dist/150})`;
+                ctx.lineWidth=0.5;
+                ctx.stroke();
+            }
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+</body>
+</html>
