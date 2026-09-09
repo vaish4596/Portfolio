@@ -1,0 +1,40 @@
+name: Connect 3D animation
+
+on:
+  push:
+    paths:
+      - '.github/workflows/connect-3d-animation.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Inject 3D animation module
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+          tag = '  <script type="module" src="assets/3d-animation.js"></script>'
+          if 'assets/3d-animation.js' not in text:
+              marker = '</body>'
+              if marker not in text:
+                  raise SystemExit('Could not find </body> in index.html')
+              text = text.replace(marker, f'{tag}\n{marker}', 1)
+              path.write_text(text, encoding='utf-8')
+          else:
+              print('3D animation already connected.')
+
+      - name: Commit connection
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Connect Three.js and GSAP animation"
+          git push
